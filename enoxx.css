@@ -1,0 +1,362 @@
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 2px solid turquoise;
+    
+    
+    
+  }
+  
+   /* Change the link color to #111 (black) on hover */
+  li :hover { background-color: whitesmoke;
+    
+  }
+
+ 
+
+  /* li a is for the home page on the nav bar */
+  
+        li a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 45px 0px;
+            text-decoration: none;
+            background-color: #333;
+            width: 13.992%;
+            
+            
+        }
+/* END of LI a */
+/*---------------------------------------------------*/
+
+ /* This is the start of the active nav so with this the 
+ current page will turn blue on the nav bar 
+ For this to work "<li><a class="active" href="#home">Home</a></li>"
+ will need to be added to HTML for current page */
+            
+            li a:hover:not(.active) {
+                background-color: #111;
+                color: white;
+            }
+            
+            
+            .active {
+                background-color: turquoise;
+            }
+/* Dropdown Scrapped
+            li a, .dropbtn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                
+                text-decoration: none;
+              }
+              
+              
+
+              li.dropdown {
+                display: inline-block;
+              }
+              
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+              }
+              
+              .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+              }
+              
+              .dropdown-content a:hover {background-color: #f1f1f1;}
+              
+              .dropdown:hover .dropdown-content {
+                display: block;
+              } 
+*/
+ /* END of active nav */
+
+/*---------------------------------------------------*/
+/* li b is for the home page on the nav bar */
+        .b {
+            display: block;
+            color: Black;
+            text-align: center;
+            padding: 31px 0px;
+            text-decoration: none;
+            float: left;
+            font-size: 40px;
+            background-color: white;
+            width: 30%;
+        }
+
+  /* END of LI b */
+  
+  
+  /*---------------------------------------------------*/
+
+
+ 
+ 
+  div.nav {
+    display: block;
+    padding: 45px 0px;
+    width: 100%;
+    margin: auto;
+    
+    
+  }
+
+  div.sorry {
+    text-align: center;
+    display: block;
+    padding: 0px;
+    width: 900px;
+    margin: auto;
+    background-color: red;
+    
+  }
+
+  div.main{
+    display: block;
+    padding: 0%;
+    max-width: 50%;
+    margin: auto;
+   S
+
+
+   
+  }
+
+  div.left {
+    display: block;
+    padding: 0%;
+    max-width: 49%;
+    margin: auto;
+    background-color: turquoise;
+    
+    height: 600px;
+    
+  }
+  
+/*----------------Right Photos Main Page---------------------*/
+
+  div.right {
+    display: block;
+    padding: 0px;
+    width: 49%;
+    margin: auto;
+    background-color: turquoise;
+    
+    height: 600px;
+   
+  }
+
+  img.front {
+
+	max-width: 100%;
+	height: auto;
+    
+    
+  }
+
+   .phototxt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+
+
+/*-----------END   Right Photos main page---------------------*/
+
+body {right: 50%}
+
+div.polaroid {
+  
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  margin-bottom: 70px;
+  display: block;
+    max-width: 50%;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
+/* Below was the CSS for a shoppingcart framework that i had to scratch due to
+too many bugs and it being mostly JS when you are looking for more PHP stuff
+.shopping-cart {
+  width: 750px;
+  height: 423px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+ 
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+ 
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+ 
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+.delete-btn,
+.like-btn {
+  display: inline-block;
+  Cursor: pointer;
+}
+.delete-btn {
+  width: 18px;
+  height: 17px;
+  background: url(&quot;delete-icn.svg&quot;) no-repeat center;
+}
+ 
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  background: url('twitter-heart.png');
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+}
+
+.is-active {
+  animation-name: animate;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+ 
+@keyframes animate {
+  0%   { background-position: left;  }
+  50%  { background-position: right; }
+  100% { background-position: right; }
+}
+
+.image {
+  margin-right: 50px;
+  width: 60px;
+  height: 60px;
+}
+ 
+Let’s add some basic style to  product name and description.
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+ 
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #43484D;
+  font-weight: 400;
+}
+ 
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+ 
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+ 
+button:focus,
+input:focus {
+  outline:0;
+}
+
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+*/
